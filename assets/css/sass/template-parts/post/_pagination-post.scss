@@ -1,0 +1,54 @@
+.pagination-posts {
+	display: flex;
+	justify-content: space-between;
+	padding: $spacing-small-content 0;
+
+	[class*=nav-] {
+		background: $bg-base;
+		border: 1px solid $color-default;
+		color: $color-default;
+		padding: 6px 20px;
+
+		i {
+			vertical-align: middle;
+			@extend %transition;
+		}
+
+		span {
+			display: inline-block;
+			@extend %transition;
+		}
+	}
+
+	.nav-previous,
+	.nav-next {
+		text-decoration: none;
+	}
+
+	.nav-previous {
+		&:hover {
+			span {
+				transform: translateX(-5px);
+				@extend %transition;
+			}
+
+			i {
+				transform: translateX(-10px);
+				@extend %transition;
+			}
+		}
+	}
+
+	.nav-next {
+		&:hover {
+			span {
+				transform: translateX(5px);
+			}
+
+			i {
+				transform: translateX(10px);
+				@extend %transition;
+			}
+		}
+	}
+}

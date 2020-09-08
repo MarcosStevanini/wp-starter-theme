@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@popperjs/core": "^2.2.3",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "jquery-mask-plugin": "^1.14.16",
+    "lightgallery": "^1.6.12",
+    "modernizr": "^3.10.0",
+    "owl.carousel": "^2.3.4",
+    "wowjs": "^1.1.3"
+  }
+}

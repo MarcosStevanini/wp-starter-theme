@@ -1,0 +1,65 @@
+// Colors
+$color-default:  #e77f43 !default;
+$color-dark:     #212529 !default;
+$color-light:    #fff !default;
+
+
+// Default colors on the body
+$color-base:  $color-dark;
+$bg-base:     $color-light;
+
+
+// spacing between sections
+$default-spacing-y: 90px !default;
+$default-spacing-x: 0 !default;
+
+
+// Typography
+$font-family-base:  'Open Sans' !default;
+$font-size-base:    1rem !default;
+$line-height-base:  1.9;
+
+
+// Single post
+$border-radius-img:       10px !default;
+$default-border-color:  #dedede !default;
+$spacing-content:         50px !default;
+$spacing-small-content:   20px !default;
+
+
+// Media querie
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+
+@mixin media($width, $type: min, $dimension: width) {
+  @if map_has_key($grid-breakpoints, $width) {
+    $width: map_get($grid-breakpoints, $width);
+  }
+
+  @if $type==max {
+    $width: $width - 1px;
+  }
+
+  @media only screen and (#{$type}-#{$dimension}: $width) {
+    @content;
+  }
+}
+
+
+%default-format-content-post {
+  font-size: 1.125em;
+}
+
+
+%transition {
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}

@@ -1,0 +1,27 @@
+jQuery(function () {
+
+  ////lazyload images
+  // var lazyLoadInstance = new LazyLoad({
+  //   elements_selector: ".lazy"
+  // });
+  
+  
+//   $("input[type=tel]").on("keyup", function () {
+//     if ($(this).val().length >= 15) {
+//       $(this).mask("(00) 0 0000-0000");
+//     } else {
+//       $(this).mask("(00) 0000-00009");
+//     }
+//   })
+//   .trigger("keyup");
+
+
+  //// Light gallery
+  // $('#lightgallery').lightGallery({
+  //   download: false,
+  //   selector: '.img-select'
+  // });
+
+  // // animate
+  // new WOW().init();
+});

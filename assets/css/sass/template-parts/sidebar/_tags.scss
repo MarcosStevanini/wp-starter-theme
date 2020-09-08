@@ -1,0 +1,15 @@
+.sidebar-tags {
+  a {
+    border: 1px solid $default-border-color;
+    color: $color-base;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 7px 7px 0;
+    padding: 10px 7px;
+
+    &:hover {
+      background-color: #fbfbfb;
+      color: $color-default;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.single-tags {
+  margin-top: $spacing-content;
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    @include media(sm) {
+      padding-left: 15px;
+    }
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $color-default;
+    }
+  }
+}
